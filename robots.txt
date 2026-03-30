@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /assets/CV_Lazare_du_Pontavice.pdf

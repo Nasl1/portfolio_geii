@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Lazare du Pontavice, étudiant BUT3 GEII spécialité Électronique et Systèmes Embarqués.">
+    <title>Portfolio Lazare du Pontavice - BUT3 GEII</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="logo" onclick="goTo('view-home')">L. du Pontavice</div>
+        <ul>
+            <li><a href="#" onclick="goTo('view-home')">Accueil</a></li>
+            <li><a href="#" onclick="goTo('view-home', 'competences')">Compétences</a></li>
+            <li><a href="#" onclick="goTo('view-experience')">Parcours & CV</a></li>
+            <li><a href="#" onclick="goTo('view-home', 'projets')">Projets</a></li>
+            <li><a href="#" onclick="goTo('view-home', 'contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="view-home" class="view-section">
+
+        <header id="accueil">
+            <div class="hero-content">
+                <h1>Lazare du Pontavice</h1>
+                <h2>Technicien Supérieur en Électronique & Informatique</h2>
+                <p>Étudiant en BUT3 - Spécialité Électronique et Systèmes Embarqués (ESE)</p>
+                <div class="buttons">
+                    <a href="#" onclick="goTo('view-home', 'projets')" class="btn primary">Voir mes réalisations</a>
+                    <a href="./assets/CV_Lazare_du_Pontavice.pdf" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-download"></i> Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section id="competences">
+            <h2 class="section-title">Mes Compétences Techniques</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Électronique & Embarqué</h3>
+                    <ul>
+                        <li>Microcontrôleurs : STM32, Arduino, PIC (MPLAB/Pickit 4)</li>
+                        <li>Conception PCB : KiCad</li>
+                        <li>Bus de com. : CAN, I2C, UART</li>
+                        <li>Instrumentation : LabView, GBF, Oscillo</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Informatique Industrielle</h3>
+                    <ul>
+                        <li>Langages : C, Python, C++</li>
+                        <li>Conception 3D : SolidWorks</li>
+                        <li>Automatisme : Schneider (Machine Expert), LD</li>
+                        <li>Robotique : Cobot Expert</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Gestion de Projet</h3>
+                    <ul>
+                        <li>Gestion d'équipe (Chef de projet)</li>
+                        <li>Suivi de prototypes</li>
+                        <li>Anglais Bilingue</li>
+                        <li>Permis B + Véhicule</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="section-title">Projets Académiques & Personnels</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <img src="./assets/meteo.jpg" alt="Station Météo" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i class="fas fa-cloud-sun fa-3x" style="display:none; color:#ccc;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Station Météo & Bus CAN</h3>
+                        <p>Système d'acquisition météo multi-capteurs avec communication industrielle.</p>
+                        <span class="tag">MPLAB</span> <span class="tag">Bus CAN</span> <span class="tag">I2C</span>
+                        <br><br>
+                        <button onclick="goTo('view-meteo')" class="btn primary small">En savoir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <img src="./assets/audio.jpg" alt="Enceinte Audio" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i class="fas fa-music fa-3x" style="display:none; color:#ccc;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Système Audio 3 Voies</h3>
+                        <p>Chef de projet : Conception et réalisation d'une enceinte acoustique complète.</p>
+                        <span class="tag">Gestion Projet</span> <span class="tag">Analogique</span>
+                        <br><br>
+                        <button onclick="goTo('view-audio')" class="btn primary small">En savoir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <img src="./assets/dashboard.jpg" alt="Tableau de bord Renault" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i class="fas fa-gamepad fa-3x" style="display:none; color:#ccc;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sim-Racing Renault 4/5</h3>
+                        <p>Interfaçage d'un vrai tableau de bord de voiture pour jeux de simulation.</p>
+                        <span class="tag">Arduino</span> <span class="tag">DIY</span> <span class="tag">Gaming</span>
+                        <br><br>
+                        <button onclick="goTo('view-dashboard')" class="btn primary small">En savoir plus</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer id="contact">
+            <h2>Travaillons ensemble</h2>
+            <p>Actuellement en alternance chez BizLink Robotic Solutions.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/lazare-du-pontavice-69ba2b336/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Nasl1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:lazare.du.pontavice@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <p class="copyright">© 2025 Lazare du Pontavice - Étudiant BUT GEII</p>
+        </footer>
+
+    </div>
+    <div id="view-experience" class="view-section" style="display: none;">
+
+        <div class="product-container" style="display: block; padding-top: 20px;">
+
+            <h1 style="text-align:center; color:#002a5c; margin-bottom:40px;">Expériences & Formation</h1>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Depuis Septembre 2025</div>
+                    <div class="timeline-content">
+                        <h3>Apprenti Technicien (Alternance)</h3>
+                        <h4>BizLink Robotic Solutions France (Gellainville)</h4>
+                        <p>Intégré au Pôle Projets et Innovation, je participe au développement de solutions robotiques industrielles.</p>
+                        <ul>
+                            <li><strong>Conception Mécanique :</strong> Modélisation 3D et adaptation de préhenseurs/outillages sous SolidWorks.</li>
+                            <li><strong>Automatisme :</strong> Développement et mise au point de programmes API et IHM (Schneider Machine Expert).</li>
+                            <li><strong>Intégration :</strong> Câblage des coffrets électriques, montage mécanique et tests fonctionnels des cellules.</li>
+                            <li><strong>Mise en service :</strong> Configuration des robots et calibration des systèmes sur site ou en atelier.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Janvier 2025 - Mars 2025</div>
+                    <div class="timeline-content">
+                        <h3>Stage BUT2 - Pôle Projets et Innovation</h3>
+                        <h4>BizLink Robotic Solutions France</h4>
+                        <p>Stage technique de découverte et d'application en robotique.</p>
+                        <ul>
+                            <li>Initiation à la conception de systèmes robotisés.</li>
+                            <li>Programmation de cycles simples sur automates Schneider.</li>
+                            <li>Découverte de la robotique collaborative (Cobot).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Depuis Nov. 2023</div>
+                    <div class="timeline-content">
+                        <h3>Équipier Polyvalent</h3>
+                        <h4>McDonald's (Rambouillet)</h4>
+                        <p>Travail en équipe, gestion du stress et respect des procédures.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Aujourd'hui</div>
+                    <div class="timeline-content">
+                        <h3>BUT Génie Électrique et Informatique Industrielle</h3>
+                        <h4>IUT de Chartres / Université d'Orléans</h4>
+                        <p><strong>Spécialité :</strong> Électronique et Systèmes Embarqués (ESE).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat Général</h3>
+                        <h4>Lycée Marceau (Chartres)</h4>
+                        <p>Options scientifiques.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:50px;">
+                <p>Pour plus de détails, téléchargez mon CV complet :</p>
+                <br>
+                <a href="./assets/CV_Lazare_du_Pontavice.pdf" class="btn primary" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Voir le CV PDF
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="view-meteo" class="view-section" style="display: none;">
+        <div class="product-container">
+            <button onclick="goTo('view-home', 'projets')" class="btn-back" style="margin-bottom: 20px;">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </button>
+
+            <div class="product-image">
+                <div class="img-box-large">
+                    <img src="./assets/meteo.jpg" alt="Projet Météo" onerror="this.style.display='none';">
+                    <i class="fas fa-microchip fa-5x" style="color:#ccc;"></i>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Station Météo Connectée</h1>
+                <div class="meta-tags">
+                    <span class="tag">Bus CAN</span> <span class="tag">I2C</span> <span class="tag">MPLAB / Pickit 4</span>
+                </div>
+                <h3>Le Projet</h3>
+                <p>Conception et réalisation d'une station météo intelligente capable d'acquérir des données environnementales et de les transmettre via des protocoles industriels.</p>
+                <h3>Réalisations Techniques</h3>
+                <ul>
+                    <li><strong>Acquisition :</strong> Récupération des données capteurs (Température, Pression, Humidité) via liaison I2C.</li>
+                    <li><strong>Traitement :</strong> Programmation sur microcontrôleur PIC avec environnement MPLAB et sonde Pickit 4.</li>
+                    <li><strong>Communication :</strong> Mise en œuvre d'un Bus CAN pour la transmission des données.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="view-audio" class="view-section" style="display: none;">
+        <div class="product-container">
+            <button onclick="goTo('view-home', 'projets')" class="btn-back" style="margin-bottom: 20px;">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </button>
+
+            <div class="product-image">
+                <div class="img-box-large">
+                    <img src="./assets/audio.jpg" alt="Projet Audio" onerror="this.style.display='none';">
+                    <i class="fas fa-music fa-5x" style="color:#ccc;"></i>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Système Audio 3 Voies</h1>
+                <div class="meta-tags">
+                    <span class="tag">Chef de Projet</span> <span class="tag">Filtrage Analogique</span>
+                </div>
+                <h3>Le Projet</h3>
+                <p>Projet majeur de BUT : conception complète d'une enceinte acoustique haute fidélité à 3 voies.</p>
+                <h3>Mon Rôle : Chef de Projet</h3>
+                <ul>
+                    <li>Planification des tâches et respect des délais.</li>
+                    <li>Coordination de l'équipe technique.</li>
+                </ul>
+                <h3>Réalisations Techniques</h3>
+                <ul>
+                    <li>Calcul et dimensionnement des filtres analogiques.</li>
+                    <li>Choix des haut-parleurs et conception de l'ébénisterie.</li>
+                    <li>Mesures acoustiques et ajustements de gain.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-dashboard" class="view-section" style="display: none;">
+        <div class="product-container">
+            <button onclick="goTo('view-home', 'projets')" class="btn-back" style="margin-bottom: 20px;">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </button>
+
+            <div class="product-image">
+                <div class="img-box-large">
+                    <img src="./assets/dashboard.jpg" alt="Projet SimRacing" onerror="this.style.display='none';">
+                    <i class="fas fa-car fa-5x" style="color:#ccc;"></i>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Sim-Racing Renault 4/5</h1>
+                <div class="meta-tags">
+                    <span class="tag">Arduino</span> <span class="tag">DIY</span> <span class="tag">Automobile</span>
+                </div>
+                <h3>Le Concept</h3>
+                <p>Adaptation d'un véritable tableau de bord de Renault 4/5 pour l'utiliser comme contrôleur de jeu sur des simulateurs de conduite PC.</p>
+                <h3>Défis Techniques</h3>
+                <ul>
+                    <li><strong>Reverse Engineering :</strong> Analyse du câblage d'origine du compteur.</li>
+                    <li><strong>Interfaçage :</strong> Utilisation d'un Arduino pour piloter les aiguilles (PWM) et lire les voyants.</li>
+                    <li><strong>Logiciel :</strong> Communication série entre le jeu (PC) et la carte électronique.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fonction unique pour gérer navigation + scroll
+        function goTo(viewId, sectionId = null) {
+
+            // 1. Cacher toutes les vues
+            const views = document.querySelectorAll('.view-section');
+            views.forEach(v => v.style.display = 'none');
+
+            // 2. Afficher la vue demandée
+            const targetView = document.getElementById(viewId);
+            if(targetView) {
+                targetView.style.display = 'block';
+            }
+
+            // 3. Gestion du scroll
+            if (sectionId) {
+                // Si on cible une section (ex: #projets), on attend un tout petit peu que la page s'affiche
+                setTimeout(() => {
+                    const section = document.getElementById(sectionId);
+                    if(section) {
+                        // On scrolle vers la section en soustrayant la hauteur du menu fixe (env 80px)
+                        const navHeight = document.querySelector('nav').offsetHeight;
+                        window.scrollTo({
+                            top: section.offsetTop - navHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 10);
+            } else {
+                // Sinon on remonte tout en haut
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+
+</body>
+</html>
