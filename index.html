@@ -15,9 +15,9 @@
         <nav>
             <div class="logo">L. du Pontavice</div>
             <ul>
-                <li><a href="#" onclick="showPage('view-home')">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="#competences">Compétences</a></li>
-                <li><a href="#" onclick="showPage('view-experience')">Parcours & CV</a></li>
+                <li><a href="parcours.html">Parcours & CV</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -164,93 +164,12 @@
                 <a href="https://github.com/Nasl1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                 <a href="mailto:lazare.du.pontavice@gmail.com"><i class="fas fa-envelope"></i> Email</a>
             </div>
-            <p class="copyright">© 2025 Lazare du Pontavice - Étudiant BUT GEII</p>
+            <p class="copyright">© 2026 Lazare du Pontavice - Étudiant BUT GEII</p>
         </footer>
 
-    </div> <div id="view-experience" class="detail-view" style="display: none;">
-        
+    </div> <div id="view-robot" class="detail-view" style="display: none;">
         <nav class="detail-nav">
-            <button onclick="showPage('view-home')" class="btn-back">
-                <i class="fas fa-arrow-left"></i> Retour à l'accueil
-            </button>
-            <div class="logo" style="font-size:1.2rem;">Mon Parcours</div>
-        </nav>
-
-        <div class="product-container" style="display: block;">
-            
-            <h1 style="text-align:center; color:#002a5c; margin-bottom:40px;">Expériences & Formation</h1>
-
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Avril 2024 - Juin 2024 (10 semaines)</div>
-                    <div class="timeline-content">
-                        <h3>Stage Technicien Bureau d'Études</h3>
-                        <h4>Nom de l'Entreprise (Lieu)</h4>
-                        <p>Développement complet d'un banc de test pour cartes électroniques industrielles.</p>
-                        <ul>
-                            <li>Analyse du cahier des charges et choix des composants.</li>
-                            <li>Programmation Firmware en C sur STM32 (Keil uVision).</li>
-                            <li>Développement d'une interface PC en Python pour visualiser les résultats.</li>
-                            <li>Rédaction du rapport de test et documentation technique.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Juillet - Août 2023</div>
-                    <div class="timeline-content">
-                        <h3>Emploi Saisonnier / Intérim</h3>
-                        <h4>Nom de l'Entreprise</h4>
-                        <p>Découverte du monde de l'entreprise et travail en équipe.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022 - Aujourd'hui</div>
-                    <div class="timeline-content">
-                        <h3>BUT Génie Électrique et Informatique Industrielle</h3>
-                        <h4>IUT d'Orléans</h4>
-                        <p><strong>Spécialité :</strong> Électronique et Systèmes Embarqués (ESE).</p>
-                        <ul>
-                            <li>Projets techniques en équipe (SAÉ).</li>
-                            <li>Apprentissage de l'anglais technique.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                        <h3>Baccalauréat Général / STI2D</h3>
-                        <h4>Lycée [Nom]</h4>
-                        <p>Mention Bien. Options Mathématiques et Physique.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div style="text-align:center; margin-top:50px;">
-                <p>Pour plus de détails, téléchargez mon CV complet :</p>
-                <br>
-                <a href="./assets/CV_Lazare_Web.pdf" class="btn primary" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-file-pdf"></i> Voir le CV PDF
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div id="view-robot" class="detail-view" style="display: none;">
-        <nav class="detail-nav">
-            <button onclick="showPage('view-home')" class="btn-back">
-                <i class="fas fa-arrow-left"></i> Retour à l'accueil
-            </button>
+            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
             <div class="logo" style="font-size:1.2rem;">Détail Projet</div>
         </nav>
 
@@ -280,10 +199,9 @@
         </div>
     </div>
 
-
     <div id="view-meteo" class="detail-view" style="display: none;">
         <nav class="detail-nav">
-            <button onclick="showPage('view-home')" class="btn-back"><i class="fas fa-arrow-left"></i> Retour</button>
+            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour</a>
         </nav>
         <div class="product-container">
             <div class="product-image">
@@ -309,7 +227,7 @@
 
     <div id="view-tri" class="detail-view" style="display: none;">
         <nav class="detail-nav">
-            <button onclick="showPage('view-home')" class="btn-back"><i class="fas fa-arrow-left"></i> Retour</button>
+            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour</a>
         </nav>
         <div class="product-container">
             <div class="product-image">
@@ -335,17 +253,12 @@
 
     <script>
         function showPage(pageId) {
-            // 1. Cacher TOUTES les vues
             document.getElementById('view-home').style.display = 'none';
             document.getElementById('view-robot').style.display = 'none';
             document.getElementById('view-meteo').style.display = 'none';
             document.getElementById('view-tri').style.display = 'none';
-            document.getElementById('view-experience').style.display = 'none';
             
-            // 2. Afficher la vue demandée
             document.getElementById(pageId).style.display = 'block';
-            
-            // 3. Remonter en haut de page
             window.scrollTo(0, 0);
         }
     </script>
