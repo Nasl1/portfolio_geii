@@ -3,265 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Lazare du Pontavice, étudiant BUT3 GEII spécialité Électronique et Systèmes Embarqués.">
-    <title>Portfolio Lazare du Pontavice - BUT3 GEII</title>
+    <meta name="description" content="Parcours et Expériences de Lazare du Pontavice - BUT3 GEII ESE.">
+    <title>Mon Parcours - Lazare du Pontavice</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <div id="view-home">
-        
-        <nav>
-            <div class="logo">L. du Pontavice</div>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="parcours.html">Parcours & CV</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <div class="logo">L. du Pontavice</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#competences">Compétences</a></li>
+            <li><a href="parcours.html" style="color: #0056b3; font-weight: bold;">Parcours & CV</a></li>
+            <li><a href="index.html#projets">Projets</a></li>
+            <li><a href="interets.html">Intérêts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <header id="accueil">
-            <div class="hero-content">
-                <h1>Lazare du Pontavice</h1>
-                <h2>Technicien Supérieur en Électronique & Informatique</h2>
-                <p>Étudiant en BUT3 - Spécialité Électronique et Systèmes Embarqués (ESE)</p>
-                <div class="buttons">
-                    <a href="#projets" class="btn primary">Voir mes réalisations</a>
-                    <a href="./assets/CV_Lazare_Web.pdf" class="btn secondary" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-download"></i> Télécharger mon CV
-                    </a>
-                </div>
-            </div>
-        </header>
+    <section style="padding-top: 60px;">
+        <h1 style="text-align:center; color:#002a5c; margin-bottom:40px; font-size: 2.5rem;">Expériences & Formation</h1>
 
-        <section id="competences">
-            <h2 class="section-title">Mes Compétences Techniques</h2>
-            <div class="skills-container">
-
-                <div class="skill-card">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Électronique & Embarqué</h3>
-                    <ul>
-                        <li>Conception PCB (KiCad, Altium)</li>
-                        <li>Microcontrôleurs (STM32, ESP32)</li>
-                        <li>Bus de com. (I2C, SPI, UART, CAN)</li>
-                        <li>Instrumentation & Mesures</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Informatique Industrielle</h3>
-                    <ul>
-                        <li>C / C++ (Embarqué)</li>
-                        <li>Python (Scripting & Data)</li>
-                        <li>IoT & MQTT</li>
-                        <li>Linux Embarqué</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-industry"></i>
-                    <h3>Automatisme</h3>
-                    <ul>
-                        <li>Programmation API (Siemens TIA)</li>
-                        <li>Supervision (IHM)</li>
-                        <li>Régulation & Asservissements</li>
-                        <li>Réseaux (Profinet, Modbus)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projets">
-            <h2 class="section-title">Projets Académiques & Personnels</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-img-placeholder">
-                        <img src="./assets/robot.jpg" alt="Photo du robot suiveur de ligne" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <i class="fas fa-robot fa-3x" style="display:none;"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Robot Suiveur de Ligne</h3>
-                        <p>Conception PCB et programmation STM32.</p>
-                        <span class="tag">STM32</span> <span class="tag">KiCad</span>
-                        <br><br>
-                        <button onclick="showPage('view-robot')" class="btn primary small">En savoir plus</button>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-placeholder">
-                        <img src="./assets/meteo.jpg" alt="Station Météo" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <i class="fas fa-cloud-sun fa-3x" style="display:none;"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Station Météo IoT</h3>
-                        <p>Capteurs ESP32, MQTT et Dashboard Node-Red.</p>
-                        <span class="tag">IoT</span> <span class="tag">Python</span>
-                        <br><br>
-                        <button onclick="showPage('view-meteo')" class="btn primary small">En savoir plus</button>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-placeholder">
-                        <img src="./assets/tri.jpg" alt="Chaîne de tri" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <i class="fas fa-conveyor-belt fa-3x" style="display:none;"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Supervision Chaîne de Tri</h3>
-                        <p>Automatisme Siemens S7-1200 et IHM.</p>
-                        <span class="tag">Siemens</span> <span class="tag">TIA Portal</span>
-                        <br><br>
-                        <button onclick="showPage('view-tri')" class="btn primary small">En savoir plus</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="interets" style="background-color: white;">
-            <h2 class="section-title">Mes Centres d'Intérêt</h2>
-            <div class="interests-container">
-                
-                <div class="interest-item">
-                    <div class="interest-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Culture Maker</h3>
-                    <p>Impression 3D, modélisation (Fusion 360) et réparation d'appareils électroniques.</p>
-                </div>
-
-                <div class="interest-item">
-                    <div class="interest-icon">
-                        <i class="fas fa-running"></i>
-                    </div>
-                    <h3>Course à pied / Trail</h3>
-                    <p>Pratique régulière. Participation à plusieurs semi-marathons régionaux.</p>
-                </div>
-
-                <div class="interest-item">
-                    <div class="interest-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Rétrogaming</h3>
-                    <p>Restauration de vieilles consoles et création de bornes d'arcade sur Raspberry Pi.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <footer id="contact">
-            <h2>Travaillons ensemble</h2>
-            <p>À la recherche d'un stage de fin d'études ou d'une alternance.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/lazare-du-pontavice-69ba2b336/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/Nasl1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                <a href="mailto:lazare.du.pontavice@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            </div>
-            <p class="copyright">© 2026 Lazare du Pontavice - Étudiant BUT GEII</p>
-        </footer>
-
-    </div> <div id="view-robot" class="detail-view" style="display: none;">
-        <nav class="detail-nav">
-            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
-            <div class="logo" style="font-size:1.2rem;">Détail Projet</div>
-        </nav>
-
-        <div class="product-container">
-            <div class="product-image">
-                <div class="img-box-large">
-                    <img src="./assets/robot.jpg" alt="Robot" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <i class="fas fa-robot fa-5x" style="display:none;"></i>
-                </div>
-            </div>
-            <div class="product-details">
-                <h1>Robot Suiveur de Ligne</h1>
-                <div class="meta-tags">
-                    <span class="tag">STM32 L476</span>
-                    <span class="tag">KiCad</span>
-                    <span class="tag">Langage C</span>
-                </div>
-                <h3>Description</h3>
-                <p>Réalisation en équipe d'un robot autonome capable de suivre un parcours complexe le plus rapidement possible.</p>
-                <h3>Détails Techniques</h3>
-                <ul>
-                    <li>Conception d'un PCB 4 couches (Routage KiCad).</li>
-                    <li>Algorithme d'asservissement PID numérique.</li>
-                    <li>Gestion des interruptions et timers du STM32 (HAL & Bare Metal).</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="view-meteo" class="detail-view" style="display: none;">
-        <nav class="detail-nav">
-            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour</a>
-        </nav>
-        <div class="product-container">
-            <div class="product-image">
-                <div class="img-box-large">
-                    <img src="./assets/meteo.jpg" alt="Météo" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <i class="fas fa-cloud-sun fa-5x" style="display:none;"></i>
-                </div>
-            </div>
-            <div class="product-details">
-                <h1>Station Météo IoT</h1>
-                <span class="tag">ESP32</span> <span class="tag">MQTT</span> <span class="tag">Node-Red</span>
-                <h3>Description</h3>
-                <p>Système complet de relevé de température et humidité avec transmission sans fil.</p>
-                <h3>Détails Techniques</h3>
-                <ul>
-                    <li>Code C++ sur ESP32 (Arduino Framework).</li>
-                    <li>Communication WiFi et protocole MQTT.</li>
-                    <li>Visualisation des courbes en temps réel sur Dashboard.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="view-tri" class="detail-view" style="display: none;">
-        <nav class="detail-nav">
-            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour</a>
-        </nav>
-        <div class="product-container">
-            <div class="product-image">
-                <div class="img-box-large">
-                    <img src="./assets/tri.jpg" alt="Tri" class="img-fit" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <i class="fas fa-industry fa-5x" style="display:none;"></i>
-                </div>
-            </div>
-            <div class="product-details">
-                <h1>Supervision Chaîne de Tri</h1>
-                <span class="tag">Siemens S7-1200</span> <span class="tag">Tia Portal</span>
-                <h3>Description</h3>
-                <p>Automatisation d'une chaîne de tri industrielle avec supervision SCADA.</p>
-                <h3>Détails Techniques</h3>
-                <ul>
-                    <li>Programmation LADDER et GRAFCET.</li>
-                    <li>Configuration réseau Profinet.</li>
-                    <li>Création des vues IHM (Arrêt d'urgence, marche, compteurs).</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function showPage(pageId) {
-            document.getElementById('view-home').style.display = 'none';
-            document.getElementById('view-robot').style.display = 'none';
-            document.getElementById('view-meteo').style.display = 'none';
-            document.getElementById('view-tri').style.display = 'none';
+        <div class="timeline">
             
-            document.getElementById(pageId).style.display = 'block';
-            window.scrollTo(0, 0);
-        }
-    </script>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Avril 2024 - Juin 2024 (10 semaines)</div>
+                <div class="timeline-content">
+                    <h3>Stage Technicien Bureau d'Études</h3>
+                    <h4>Nom de l'Entreprise (Lieu)</h4>
+                    <p>Développement complet d'un banc de test pour cartes électroniques industrielles.</p>
+                    <ul>
+                        <li>Analyse du cahier des charges et choix des composants.</li>
+                        <li>Programmation Firmware en C sur STM32 (Keil uVision).</li>
+                        <li>Développement d'une interface PC en Python pour visualiser les résultats.</li>
+                        <li>Rédaction du rapport de test et documentation technique.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Juillet - Août 2023</div>
+                <div class="timeline-content">
+                    <h3>Emploi Saisonnier / Intérim</h3>
+                    <h4>Nom de l'Entreprise</h4>
+                    <p>Découverte du monde de l'entreprise et travail en équipe.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - Aujourd'hui</div>
+                <div class="timeline-content">
+                    <h3>BUT Génie Électrique et Informatique Industrielle</h3>
+                    <h4>IUT d'Orléans</h4>
+                    <p><strong>Spécialité :</strong> Électronique et Systèmes Embarqués (ESE).</p>
+                    <ul>
+                        <li>Projets techniques en équipe (SAÉ).</li>
+                        <li>Apprentissage de l'anglais technique.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Baccalauréat Général / STI2D</h3>
+                    <h4>Lycée [Nom]</h4>
+                    <p>Mention Bien. Options Mathématiques et Physique.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:50px; margin-bottom: 20px;">
+            <p style="margin-bottom: 15px;">Pour plus de détails, téléchargez mon CV complet :</p>
+            <a href="./assets/CV_Lazare_Web.pdf" class="btn primary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i> Voir le CV PDF
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Travaillons ensemble</h2>
+        <p>À la recherche d'un stage de fin d'études ou d'une alternance.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/lazare-du-pontavice-69ba2b336/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Nasl1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:lazare.du.pontavice@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+        <p class="copyright">© 2026 Lazare du Pontavice - Étudiant BUT GEII</p>
+    </footer>
 
 </body>
 </html>
