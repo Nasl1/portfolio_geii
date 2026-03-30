@@ -3,7 +3,7 @@
 Bienvenue sur le code source de mon portfolio en ligne. 
 Je suis actuellement étudiant en **BUT3 Génie Électrique et Informatique Industrielle (GEII)**, spécialité **Électronique et Systèmes Embarqués (ESE)** à l'IUT d'Orléans.
 
-**Visiter le site en ligne :** [https://Nasl1.github.io/portfolio/](https://Nasl1.github.io/portfolio/) *(Mets à jour ce lien avec ton vrai nom de dépôt si besoin)*
+**Visiter le site en ligne :** [https://Nasl1.github.io/portfolio_geii/](https://Nasl1.github.io/portfolio_geii/)
 
 ## À propos de ce projet
 
